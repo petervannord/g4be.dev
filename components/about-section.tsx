@@ -114,10 +114,10 @@ export default function AboutSection() {
               ))}
             </div>
 
-            <Button className="rounded-full" size="lg">
+            {/* <Button className="rounded-full" size="lg">
               <Download className="mr-2 h-4 w-4" />
               Download CV
-            </Button>
+            </Button> */}
           </motion.div>
         </div>
       </div>
