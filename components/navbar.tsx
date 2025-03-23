@@ -55,7 +55,8 @@ export default function Navbar() {
         </div>
 
         {/* Mobile navigation: evenly spaced icons */}
-        <div className="flex md:hidden flex-1 justify-between px-4">
+        {/* Mobile navigation: evenly spaced icons */}
+        <div className="flex md:hidden w-full flex-row justify-between px-6">
           {navLinks.map((link) => {
             const Icon = link.icon;
             return (
@@ -63,7 +64,7 @@ export default function Navbar() {
                 key={link.name}
                 whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}
                 whileTap={{ scale: 0.9 }}
-                className="cursor-pointer"
+                className="cursor-pointer flex justify-center items-center"
               >
                 <Link
                   href={link.href}
