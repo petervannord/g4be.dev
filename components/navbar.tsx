@@ -12,7 +12,8 @@ import {
   Mail,
   Download,
 } from "lucide-react";
-import { ModeToggle } from "@/components/mode-toggle";
+import { ModeToggle } from "./mode-toggle";
+
 const navLinks = [
   { name: "Home", href: "#home", icon: Home },
   { name: "About", href: "#about", icon: Info },
@@ -53,7 +54,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile navigation: icon links */}
+        {/* Mobile navigation: icon links only */}
         <div className="flex md:hidden flex-1 justify-around">
           {navLinks.map((link) => {
             const Icon = link.icon;
@@ -62,35 +63,33 @@ export default function Navbar() {
                 key={link.name}
                 whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}
                 whileTap={{ scale: 0.9 }}
-                className="flex flex-col items-center cursor-pointer"
+                className="cursor-pointer"
               >
                 <Link
                   href={link.href}
-                  className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  <Icon className="h-5 w-5" />
-                  <span className="text-xs">{link.name}</span>
+                  <Icon className="h-6 w-6" />
                 </Link>
               </motion.div>
             );
           })}
         </div>
 
-        <div className="flex items-center space-x-4">
-          <div className="flex-grow"></div>
+        <div className="flex items-center space-x-0">
+          <div className="w-3 h-8"></div>
           <ModeToggle />
-
           {/* Desktop: text button, Mobile: icon button */}
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button className="rounded-full hidden md:inline">
+          {/* <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Button className="rounded-full hidden ml-4 md:inline">
               Download CV
             </Button>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          </motion.div> */}
+          {/* <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button className="rounded-full md:hidden">
-              <Download className="h-5 w-5" />
+              <Download className="h-6 w-6" />
             </Button>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </motion.div>
