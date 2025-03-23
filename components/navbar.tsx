@@ -15,12 +15,17 @@ import {
 import { ModeToggle } from "./mode-toggle";
 
 const navLinks = [
-  { name: "Home", href: "#home", icon: Home },
-  { name: "About", href: "#about", icon: Info },
-  { name: "Skills", href: "#skills", icon: Code },
-  { name: "Projects", href: "#projects", icon: Folder },
-  { name: "Testimonials", href: "#testimonials", icon: MessageSquare },
-  { name: "Contact", href: "#contact", icon: Mail },
+  { name: "Home", href: "#home", icon: Home, space: true },
+  { name: "About", href: "#about", icon: Info, space: true },
+  { name: "Skills", href: "#skills", icon: Code, space: true },
+  { name: "Projects", href: "#projects", icon: Folder, space: true },
+  {
+    name: "Testimonials",
+    href: "#testimonials",
+    icon: MessageSquare,
+    space: true,
+  },
+  { name: "Contact", href: "#contact", icon: Mail, space: true },
 ];
 
 export default function Navbar() {
@@ -54,9 +59,8 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile navigation: evenly spaced icons */}
-        {/* Mobile navigation: evenly spaced icons */}
-        <div className="flex md:hidden w-full flex-row justify-between px-6">
+        {/* Mobile navigation: icon links only */}
+        <div className="flex md:hidden flex-1 justify-around">
           {navLinks.map((link) => {
             const Icon = link.icon;
             return (
@@ -64,11 +68,11 @@ export default function Navbar() {
                 key={link.name}
                 whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}
                 whileTap={{ scale: 0.9 }}
-                className="cursor-pointer flex justify-center items-center"
+                className="cursor-pointer"
               >
                 <Link
                   href={link.href}
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground  hover:text-primary transition-colors"
                 >
                   <Icon className="h-6 w-6" />
                 </Link>
@@ -78,7 +82,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center space-x-0">
-          <div className="w-3 h-8"></div>
+          <div className="w-2 h-8"></div>
           <ModeToggle />
           {/* Desktop: text button, Mobile: icon button */}
           {/* <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
