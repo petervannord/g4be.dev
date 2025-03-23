@@ -54,8 +54,8 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile navigation: icon links only */}
-        <div className="flex md:hidden flex-1 justify-around">
+        {/* Mobile navigation: evenly spaced icons */}
+        <div className="flex md:hidden flex-1 justify-between px-4">
           {navLinks.map((link) => {
             const Icon = link.icon;
             return (
