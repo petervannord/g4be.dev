@@ -146,11 +146,11 @@ export default function HeroSection() {
               <InstagramIcon className="h-5 w-5" />
             </a>
             {/* <a
-              href="https://linkedin.com"
+              href="https://discord.com"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-background/80 dark:bg-muted/30 backdrop-blur-sm p-3 rounded-full hover:text-primary transition-colors"
-              aria-label="LinkedIn"
+              aria-label="discord"
             >
               <Linkedin className="h-5 w-5" />
             </a> */}
