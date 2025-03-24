@@ -82,7 +82,7 @@ export default function HeroSection() {
                   1000,
                   "C/C++ Developer",
                   1000,
-                  "and Lifelong Learner!",
+                  "charli xcx brat meow kitty rawr!",
                   1000,
                 ]}
                 wrapper="span"
