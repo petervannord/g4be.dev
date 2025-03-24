@@ -24,7 +24,7 @@ export default function ProjectsSection() {
         "https://cis9db4fll.ufs.sh/f/dfhCbRMwVEKt7ShxqmFXqBCdb8Mw9RsJV4onpyKWtm7rO21S",
       tags: ["C++", "Keyauth", "ImGui", "Desktop", "React", "NextJS"],
       demoLink: "https://hwidchanger.com",
-      githubLink: "https://github.com/comingsoon",
+      githubLink: "https://github.com/petervannord/hwidchanger.com",
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ export default function ProjectsSection() {
         "https://cis9db4fll.ufs.sh/f/dfhCbRMwVEKt9uQCEBOq7KqhBIyVD0gsQAm4x1wOPZ2G8LRT",
       tags: ["React", "NextJS", "Tailwind CSS", "Typescript", "web"],
       demoLink: "https://g4be.dev",
-      githubLink: "https://github.com/comingsoon",
+      githubLink: "https://github.com/petervannord/g4be.dev",
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ export default function ProjectsSection() {
         "https://cis9db4fll.ufs.sh/f/dfhCbRMwVEKt7wRecaFXqBCdb8Mw9RsJV4onpyKWtm7rO21S",
       tags: ["React", "Typescript", "SCSS", "JavScript", "web"],
       demoLink: "https://nexgenautodetailing.com",
-      githubLink: "https://github.com/comingsoon",
+      githubLink: "https://github.com/petervannord/nexgenautodetail",
     },
     // {
     //   id: 4,
