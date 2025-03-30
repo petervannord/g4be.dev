@@ -82,8 +82,8 @@ export default function HeroSection() {
                   1000,
                   "C/C++ Developer",
                   1000,
-                  "charli xcx brat meow kitty rawr!",
-                  1000,
+                  // "",
+                  // 1000,
                 ]}
                 wrapper="span"
                 speed={50}
