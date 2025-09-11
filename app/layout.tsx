@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 export const metadata: Metadata = {
   title: "G4be Portfolio | Home",
   description: "Discover my portfolio, featuring my projects and skills.",
