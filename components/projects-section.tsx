@@ -24,7 +24,7 @@ export default function ProjectsSection() {
         "https://cis9db4fll.ufs.sh/f/dfhCbRMwVEKt7ShxqmFXqBCdb8Mw9RsJV4onpyKWtm7rO21S",
       tags: ["C++", "Keyauth", "ImGui", "Desktop", "React", "NextJS"],
       demoLink: "https://hwidchanger.com",
-      githubLink: "https://github.com/petervannord/hwidchanger.com",
+      githubLink: "https://github.com/petervannord",
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ export default function ProjectsSection() {
       image:
         "https://cis9db4fll.ufs.sh/f/dfhCbRMwVEKt9uQCEBOq7KqhBIyVD0gsQAm4x1wOPZ2G8LRT",
       tags: ["React", "NextJS", "Tailwind CSS", "Typescript", "web"],
-      demoLink: "https://g4be.dev",
+      demoLink: "https://g4be-dev.vercel.app/",
       githubLink: "https://github.com/petervannord/g4be.dev",
     },
     {
@@ -45,8 +45,8 @@ export default function ProjectsSection() {
       image:
         "https://cis9db4fll.ufs.sh/f/dfhCbRMwVEKt7wRecaFXqBCdb8Mw9RsJV4onpyKWtm7rO21S",
       tags: ["React", "Typescript", "SCSS", "JavScript", "web"],
-      demoLink: "https://nexgenautodetailing.com",
-      githubLink: "https://github.com/petervannord/nexgenautodetail",
+      demoLink: "https://nexgenautodetailing.com",   
+      githubLink: "https://github.com/petervannord/NEXGEN-AutoDetailing_t-ef",
     },
     // {
     //   id: 4,
@@ -199,9 +199,11 @@ export default function ProjectsSection() {
         </div>
 
         <div className="flex justify-center mt-12">
-          <Button className="rounded-full" size="lg">
-            View All Projects
-            <ArrowRight className="ml-2 h-4 w-4" />
+          <Button className="rounded-full" size="lg" asChild>
+            <a href="https://github.com/petervannord" target="_blank" rel="noopener noreferrer">
+              View All Projects
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </a>
           </Button>
         </div>
       </div>
